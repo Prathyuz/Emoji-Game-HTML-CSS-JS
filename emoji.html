@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Game</title>
+    <link rel="stylesheet" href="emoji.css" />
+    <script src="emoji.js" defer></script>
+  </head>
+  <body>
+    <div class="box">
+      <div id="score" class="count">Score: 0</div>
+
+      <div class="container">
+        <input class="emoji" id="button01" onclick="suffle('button01')" />
+        <input class="emoji" id="button02" onclick="suffle('button02')" />
+        <input class="emoji" id="button03" onclick="suffle('button03')" />
+        <input class="emoji" id="button04" onclick="suffle('button04')" />
+        <input class="emoji" id="button05" onclick="suffle('button05')" />
+        <input class="emoji" id="button06" onclick="suffle('button06')" />
+        <input class="emoji" id="button07" onclick="suffle('button07')" />
+        <input class="emoji" id="button08" onclick="suffle('button08')" />
+        <input class="emoji" id="button09" onclick="suffle('button09')" />
+        <input class="emoji" id="button10" onclick="suffle('button10')" />
+        <input class="emoji" id="button11" onclick="suffle('button11')" />
+        <input class="emoji" id="button12" onclick="suffle('button12')" />
+      </div>
+      <!-- Score display -->
+      <button class="restart" onclick="restart()">Restart</button>
+
+      <div id="allclicked" class="drawpopup">
+        <div class="innerpopup">
+          <p>
+            ✨ CONGRATS ✨ <br />
+            YOU CLICKED ALL EMOJIS
+          </p>
+          <button class="OK" onclick="OKX()">x</button>
+        </div>
+      </div>
+
+      <div id="alreadyclicked" class="drawpopup">
+        <div class="innerpopup">
+          <p>
+            SORRY ! <br />
+            YOU ALREADY CLICKED
+          </p>
+          <button class="OK" onclick="OKO()">x</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
